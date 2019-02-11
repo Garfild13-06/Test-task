@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1919px;
+  min-width: 450px;
+
+  .pics {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+
+    &_block {
+
+      position: relative;
+      display: flex;
+      flex-direction: column-reverse;
+
+      &_title {
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 24px;
+        font-size: 16px;
+        margin-bottom: 4px;
+        margin-left: 16px;
+        margin-right: 16px;
+
+        color: #FFFFFF;
+      }
+
+      &_announce {
+        //position: absolute;
+        //left: 16px;
+        //right: 16px;
+        //bottom: 12px;
+        margin-bottom: 12px;
+        margin-left: 16px;
+        margin-right: 16px;
+
+        font-family: Open Sans;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 18px;
+        font-size: 12px;
+        color: #FFFFFF;
+      }
+
+      &-1 {
+        background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img1.png");
+        border-radius: 4px;
+        background-size: 100%;
+      }
+
+      &-2 {
+        background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img2.png");
+        border-radius: 4px;
+        background-size: 100%;
+      }
+
+      &-3 {
+        background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img3.png");
+        border-radius: 4px;
+        background-size: 100%;
+      }
+
+      &-4 {
+        background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img4.png");
+        border-radius: 4px;
+        background-size: 100%;
+      }
+    }
+  }
+}
+
+
+//для экранов
+@media screen and (max-width: 1920px) {
+  body {
+    padding-top: 100px;
+    padding-left: 138px;
+    padding-right: 138px;
+
+    .pics {
+      //border: 1px solid green;
+
+      &_block {
+        width: 273px;
+        height: 196px;
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1370px) {
+  body {
+    padding-top: 100px;
+    padding-left: 82px;
+    padding-right: 82px;
+
+    .pics {
+      margin: 0 auto;
+      width: 818px;
+
+      &_block {
+        width: 290px;
+        height: 208px;
+      }
+    }
+  }
+}
+
+//для планшетов
+@media screen and (max-width: 1000px) {
+  body {
+    padding-top: 100px;
+    padding-left: 82px;
+    padding-right: 82px;
+
+    .pics {
+      width: 100%;
+
+      &_block {
+        width: 290px;
+        height: 208px;
+      }
+    }
+  }
+}
+
+//для мобильных устройств
+@media screen and (max-width: 750px) {
+  body {
+    padding-top: 24px;
+    padding-left: 16px;
+    padding-right: 17px;
+
+    .pics {
+      width: 100%;
+      flex-direction: column;
+
+      &_block {
+        width: 100%;
+        height: 100px;
+
+        &_title {
+          position: absolute;
+          left: 130px;
+          top: 5px;
+
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: bold;
+          line-height: 18px;
+          font-size: 14px;
+
+          color: #333333;
+        }
+
+        &_announce {
+          position: absolute;
+          left: 130px;
+
+          font-family: Open Sans;
+          font-style: normal;
+          font-weight: normal;
+          line-height: 18px;
+          font-size: 12px;
+
+          color: #333333;
+        }
+
+        &-1 {
+          background: linear-gradient(0deg, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img1.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &-2 {
+          background: linear-gradient(0deg, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img2.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &-3 {
+          background: linear-gradient(0deg, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img3.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        &-4 {
+          background: linear-gradient(0deg, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img4.png");
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+      }
+    }
+  }
+}
