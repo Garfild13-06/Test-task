@@ -10,14 +10,26 @@ body {
   .pics {
     width: 100%;
     position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-flow: row wrap;
     flex-flow: row wrap;
 
     &_block {
 
       position: relative;
+      display: -webkit-box;
+      display: -ms-flexbox;
       display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
       flex-direction: column-reverse;
 
       &_title {
@@ -52,24 +64,36 @@ body {
       }
 
       &-1 {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(30.64%, rgba(34, 34, 34, 0.85)), color-stop(81.78%, rgba(38, 38, 38, 0))), url("../img/img1.png");
+        background: -webkit-linear-gradient(bottom, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img1.png");
+        background: -o-linear-gradient(bottom, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img1.png");
         background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img1.png");
         border-radius: 4px;
         background-size: 100%;
       }
 
       &-2 {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(30.64%, rgba(34, 34, 34, 0.85)), color-stop(81.78%, rgba(38, 38, 38, 0))), url("../img/img2.png");
+        background: -webkit-linear-gradient(bottom, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img2.png");
+        background: -o-linear-gradient(bottom, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img2.png");
         background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img2.png");
         border-radius: 4px;
         background-size: 100%;
       }
 
       &-3 {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(30.64%, rgba(34, 34, 34, 0.85)), color-stop(81.78%, rgba(38, 38, 38, 0))), url("../img/img3.png");
+        background: -webkit-linear-gradient(bottom, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img3.png");
+        background: -o-linear-gradient(bottom, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img3.png");
         background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img3.png");
         border-radius: 4px;
         background-size: 100%;
       }
 
       &-4 {
+        background: -webkit-gradient(linear, left bottom, left top, color-stop(30.64%, rgba(34, 34, 34, 0.85)), color-stop(81.78%, rgba(38, 38, 38, 0))), url("../img/img4.png");
+        background: -webkit-linear-gradient(bottom, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img4.png");
+        background: -o-linear-gradient(bottom, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img4.png");
         background: linear-gradient(0deg, rgba(34, 34, 34, 0.85) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img4.png");
         border-radius: 4px;
         background-size: 100%;
@@ -143,6 +167,9 @@ body {
 
     .pics {
       width: 100%;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
       flex-direction: column;
 
       &_block {
@@ -152,7 +179,7 @@ body {
         &_title {
           position: absolute;
           left: 130px;
-          top: 5px;
+          top: 0px;
 
           font-family: Open Sans;
           font-style: normal;
@@ -166,6 +193,8 @@ body {
         &_announce {
           position: absolute;
           left: 130px;
+          bottom: 0;
+          margin-bottom: 0;
 
           font-family: Open Sans;
           font-style: normal;
@@ -177,24 +206,36 @@ body {
         }
 
         &-1 {
+          background: -webkit-gradient(linear, left bottom, left top, color-stop(30.64%, rgba(34, 34, 34, 0)), color-stop(81.78%, rgba(38, 38, 38, 0))), url("../img/img1.png");
+          background: -webkit-linear-gradient(bottom, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img1.png");
+          background: -o-linear-gradient(bottom, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img1.png");
           background: linear-gradient(0deg, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img1.png");
           background-repeat: no-repeat;
           background-size: contain;
         }
 
         &-2 {
+          background: -webkit-gradient(linear, left bottom, left top, color-stop(30.64%, rgba(34, 34, 34, 0)), color-stop(81.78%, rgba(38, 38, 38, 0))), url("../img/img2.png");
+          background: -webkit-linear-gradient(bottom, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img2.png");
+          background: -o-linear-gradient(bottom, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img2.png");
           background: linear-gradient(0deg, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img2.png");
           background-repeat: no-repeat;
           background-size: contain;
         }
 
         &-3 {
+          background: -webkit-gradient(linear, left bottom, left top, color-stop(30.64%, rgba(34, 34, 34, 0)), color-stop(81.78%, rgba(38, 38, 38, 0))), url("../img/img3.png");
+          background: -webkit-linear-gradient(bottom, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img3.png");
+          background: -o-linear-gradient(bottom, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img3.png");
           background: linear-gradient(0deg, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img3.png");
           background-repeat: no-repeat;
           background-size: contain;
         }
 
         &-4 {
+          background: -webkit-gradient(linear, left bottom, left top, color-stop(30.64%, rgba(34, 34, 34, 0)), color-stop(81.78%, rgba(38, 38, 38, 0))), url("../img/img4.png");
+          background: -webkit-linear-gradient(bottom, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img4.png");
+          background: -o-linear-gradient(bottom, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img4.png");
           background: linear-gradient(0deg, rgba(34, 34, 34, 0) 30.64%, rgba(38, 38, 38, 0) 81.78%), url("../img/img4.png");
           background-repeat: no-repeat;
           background-size: contain;
